@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamshi Krishna Reddy Mukkisa Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p id="title">Java Full Stack Developer</p>
+                <h1>Hi, I'm Vamshi Krishna Reddy <br>Mukkisa</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\projects\java\vamshikrishna.jpg" alt="Vamshi Krishna Reddy Mukkisa">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I have around 9+ years of experience as a Full Stack Java Developer. I have worked in the
+                        healthcare and banking sectors and am currently working in the insurance sector. I have
+                        expertise in handling front-end applications using HTML, CSS, and Bootstrap, along with
+                        JavaScript frameworks like Node.js and React.js. Additionally, I have thorough experience in
+                        back-end technologies like Java, Spring Boot, and microservices. I have working knowledge of
+                        cloud technologies like AWS and Azure.
+                        I also have good experience in CI/CD pipelines. I have worked with tools like Docker and
+                        Kubernetes, and have expertise in working with SQL and NoSQL databases. I have performed unit
+                        testing using JUnit and integration testing using Mockito, and I have used Maven for build
+                        management and Jenkins for continuous integration and delivery. Throughout my previous projects,
+                        we followed agile/scrum methodology. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>J2EE Technology</span><br>Spring, Junit, Log4J, Node-JS, Spring Boot, REST Web
+                                Services, SOAP, Spring Boot, Micro Services, ActiveMQ, RabbitMQ, JAX-RS, JAX-WS, REST
+                                API</li>
+                            <li><span>J2EE Frameworks</span><br>Spring MVC, Struts, JSF</li>
+                            <li><span>Architecture & Framework</span><br>Spring Boot, Spring, Hibernate, Spring Cloud,
+                                Microservices</li>
+                            <li><span>Database</span><br>MySQL, PL/SQL, MongoDB, Oracle 11g, DB2</li>
+                            <li><span>IDE</span><br>Eclipse, MyEclipse, IntelliJ, TOAD, Postman, SOAP-UI</li>
+                            <li><span>Operating Systems</span><br>Windows, Linux, UNIX, Mac</li>
+                            <li><span>Defect Tracking Tools</span><br>JIRA, HP ALM</li>
+                            <li><span>Web/App Servers</span><br>WebLogic, Web Sphere, Tomcat, JBoss, Apache</li>
+                            <li><span>Web Technologies</span><br>HTML5, CSS3, jQuery, Bootstrap, Angular 14, ReactJS,
+                                Node.js, XML, AJAX, SOAP, Apache Camel 2.4, REST, JSON</li>
+                            <li><span>Cloud Technologies</span><br>AWS (EC2, S3, RDS, IAM, Lambda), Azure, GCP</li>
+                            <li><span>Query Languages</span><br>SQL, PL/SQL</li>
+                            <li><span>Programming Language</span><br>Java, PL/SQL, Python, C, C++</li>
+                            <li><span>Script</span><br>PHP, Shell</li>
+                            <li><span>Tools</span><br>Ant 1.10, Maven 3.3.9, Jenkins with CI/CD pipelines, Gradle,
+                                Log4J, JUnit, Apache Camel, Cucumber, Microsoft Visio 10</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2022 - Present</span><br> Full Stack Java Developer at PremeraBlueCross, USA
+                            </li>
+                            <li><span>Mar 2021 - Sep 2022</span><br>Full Stack Java Developer at BankOfAmerica ,USA.
+                            </li>
+                            <li><span>Jan 2020 - Feb 2021</span><br>Full Stack Developer at TeladocHealth ,USA.</li>
+                            <li><span>May 2017 - Dec 2019</span><br>Software Developer at DollarTree,USA.</li>
+                            <li><span>July 2014 - Apr 2017</span><br>Software Developer at CitrixSystems,INDIA.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Master's in Information Systems from Pace University, NewYork, USA.</li>
+                            <li>Bachelor's in Computer Science from JNTU, Hyderabad, India.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> vamshikrishnareddym15@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 201-905-6950</p>
+
+                    <a href="C:\projects\java\vamshi krishna reddy mukkisa.pdf" download class="btn btn2">Download
+                        Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = '<add-your-own-link-here>' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
